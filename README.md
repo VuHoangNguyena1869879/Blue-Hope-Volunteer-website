@@ -1,24 +1,25 @@
-# 🌐 Blue Hope Volunteer Website
+# Blue Hope Volunteer Website
 
 **Blue Hope** is a full-stack volunteer management platform built for NGOs and community organizations to manage campaigns, volunteers, and social engagement. Developed as a part of the Web Development and Cloud course at the University of Adelaide, it integrates modern authentication, database interaction, and responsive UI.
 
-![Screenshot](public/images/bluehope-banner.png)
+![image](https://github.com/user-attachments/assets/dfb8e05f-ffce-4d1a-95a7-cf88baea7b77)
+
 
 ---
 
-## 🚀 Features
+## Features
 
-- 👥 **OAuth Login with Google and Facebook**
-- 📋 **Volunteer Registration and Profile Management**
-- 📅 **Event Management and Campaign Listings**
-- 📨 **Contact and Feedback Submission**
-- 📊 **Admin Dashboard for Role Management and User Monitoring**
-- 🔐 Secure session management using Passport.js and Express-session
-- 🌐 Responsive design with dynamic routing
+- **OAuth Login with Google and Facebook**
+- **Volunteer Registration and Profile Management**
+- **Event Management and Campaign Listings**
+- **Contact and Feedback Submission**
+- **Admin Dashboard for Role Management and User Monitoring**
+- Secure session management using Passport.js and Express-session
+- Responsive design with dynamic routing
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer        | Technology                            |
 |--------------|----------------------------------------|
@@ -30,7 +31,7 @@
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 1. **Clone the Repository**
    ```bash
