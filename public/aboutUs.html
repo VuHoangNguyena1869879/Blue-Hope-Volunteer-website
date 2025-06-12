@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="stylesheets/navBar+footer.css">
+    <link rel="stylesheet" href="stylesheets/aboutUs.css">
+    <link rel="stylesheet" href="stylesheets/subscribe.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather">
+    <script src="https://kit.fontawesome.com/b9f3af96f1.js" crossorigin="anonymous"></script>
+    <script src="javascripts/citySelector.js"></script>
+    <script src="javascripts/checkUserLoggedIn.js"></script>
+    <script src="javascripts/subscribe.js"></script>
+    <script src="javascripts/changeLinkColor.js"></script>
+    <script src="javascripts/branch.js"></script>
+</head>
+
+<body onload="checkLoginStatus(); getBranches()">
+    <header id="page_header">
+        <div class="page_header_top">
+            <div class="left_side">
+                <div class="search_container">
+                    <form id="search_form" action="/searchResults" method="GET">
+                        <input type="text" id="search_input" name="query" placeholder="Search...">
+                        <button type="submit" id="search_button"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="header_image">
+                <a href="/index"><img src="images/bluehope(1).png" alt="Blue Hope organization logo"></a>
+            </div>
+            <div class="right_side">
+                <div id='page_header_citySelection'>
+                    <div class="city_selector">
+                        <p id="city_selector_text">Adelaide</p>
+                    </div>
+                    <div class="citydropdown_container">
+                        <div id="citydropdown_list" class="citydropdown_list">
+                            <ul>
+                                <li><a href="#" class="city_link" data-city="adelaide">Adelaide</a></li>
+                                <li><a href="#" class="city_link" data-city="melbourne">Melbourne</a></li>
+                                <li><a href="#" class="city_link" data-city="sydney">Sydney</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="page_header_user"></div>
+            </div>
+        </div>
+        <div class="navigation_bar_wrapper">
+            <nav class="navigation_bar">
+                <ul>
+                    <li><a href="/index"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="/aboutUs"><i class="fas fa-info-circle"></i> About us</a></li>
+                    <li><a href="/events"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li><a href="/news"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="/donate"><i class="fas fa-donate"></i> Donate</a></li>
+                    <li><a href="/contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="main_section">
+            <div class="introduction_div">
+                <h2>Who We Are</h2>
+                <div class="introduction_subdiv">
+                    <div class="image_div">
+                        <img src="images/aboutUs.jpg" alt="About us">
+                    </div>
+                    <div class="text_div">
+                        <p>Blue Hope Volunteer Organization is a non-profit dedicated to making a positive impact in our community through volunteerism and service projects. Founded in 2005, our organization has grown to include over 500 dedicated volunteers who are committed to giving back and helping those in need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mission_div">
+                <h2>Our Mission</h2>
+                <p>Our mission is to empower individuals and communities by providing meaningful opportunities for volunteer engagement and service. We strive to address critical social issues, promote social justice, and create a more compassionate and equitable society.</p>
+                <ul>
+                    <li>Support Vulnerable Populations: Provide aid and support to individuals and families facing hardships through various initiatives such as food drives, clothing donations, and emergency assistance programs.</li>
+                    <li>Promote Environmental Conservation: Engage in activities that protect and preserve our environment, including community clean-up events, tree planting campaigns, and educational workshops on sustainability.</li>
+                    <li>Enhance Educational Opportunities: Offer tutoring, mentorship, and educational programs that empower children and young adults to achieve their full potential.</li>
+                    <li>Improve Health and Wellness: Conduct health awareness campaigns, support mental health initiatives, and promote healthy living practices within our community.</li>
+                </ul>
+            </div>
+            <div class="offer_div">
+                <h2>What We Offer</h2>
+                <p>At Blue Hope, we offer a wide range of volunteer opportunities and service projects, including:</p>
+                <ul>
+                    <li>Community Outreach: We organize regular food drives, clothing donations, and other forms of assistance to support individuals and families in need. Our outreach programs aim to provide immediate relief while also connecting people with resources and support services for long-term stability.</li>
+                    <li>Environmental Initiatives: Our environmental projects focus on creating a cleaner, greener world. We host community clean-up events, tree planting drives, and workshops on recycling and sustainable living. By raising awareness and encouraging eco-friendly practices, we aim to protect our planet for future generations.</li>
+                    <li>Educational Programs: Education is a cornerstone of our efforts at Blue Hope. We offer tutoring and mentorship programs for children and young adults, helping them to excel academically and develop essential life skills. Our educational initiatives also include literacy programs, career counseling, and scholarship opportunities.</li>
+                    <li>Health and Wellness: Promoting health and wellness is integral to our mission. We organize health fairs, fitness activities, and mental health support groups to encourage healthy living. Our campaigns focus on spreading awareness about important health issues and providing resources for physical and mental well-being.</li>
+                </ul>
+            </div>
+            <div class="reason_div">
+                <h2>Why Choose Us</h2>
+                <p>There are many reasons to choose Blue Hope Volunteer Organization for your volunteer efforts:</p>
+                <ul>
+                    <li>Dedicated and passionate volunteers</li>
+                    <li>Impactful and meaningful service projects</li>
+                    <li>Commitment to diversity, equity, and inclusion</li>
+                    <li>Strong community partnerships</li>
+                    <li>Transparency and accountability in our operations</li>
+                    <li>A supportive and welcoming environment for volunteers of all backgrounds</li>
+                </ul>
+            </div>
+            <div class="contact_div">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or inquiries, feel free to <a href="contact.html">contact us</a>.</p>
+            </div>
+        </section>
+    </div>
+    <section class="join_section">
+        <form action="/email" method="post" id="subscription_form">
+            <div id="join_div">
+                <div id="subscribe_heading_div">
+                    <h2 id="subscribe_heading">Stay up to date with our latest events by subscribing</h2>
+                </div>
+                <div id="subscription_info">
+                    <div id="first_name">
+                        <label for="subscribe_first_name">First Name</label>
+                        <input type="text" id="subscribe_first_name" name="first_name"
+                            placeholder="Your First Name">
+                    </div>
+                    <div id="family_name">
+                        <label for="subscribe_family_name">Family Name</label>
+                        <input type="text" id="subscribe_family_name" name="family_name"
+                            placeholder="Your Family Name">
+                    </div>
+                    <div id="email">
+                        <label for="email_text">Email</label>
+                        <input type="text" id="email_text" name="email" placeholder="Your email address">
+                    </div>
+                    <div id="city">
+                        <label for="subscribe_city">City</label>
+                        <input type="text" id="subscribe_city" name="city" placeholder="Your city">
+                    </div>
+                    <div id="subscribe_section_btn">
+                        <button type="button" class="subscribe_btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="subscription_message"></div>
+    </section>
+    <footer class="page_footer">
+        <div class="page_footer_main">
+            <div class="page_footer_logo">
+                <a href="mainpage.html"><img src="images/Blue Hope.png" alt="Blue Hope Logo"></a>
+                <div class="page_footer_contact_info">
+                    <h3>Contact Us</h3>
+                    <p>Email: bluehopeofficial@gmail.com</p>
+                    <p>Phone: +61 46677 1508</p>
+                    <p>Address: 69 North Terrace, Adelaide, SA 5000</p>
+                </div>
+            </div>
+            <div class="page_footer_text">
+                <div class="page_footer_thankMessage">
+                    <p>Thank you for visiting Blue Hope Volunteer Organization's website. We're dedicated to making a positive impact in our community through volunteer work and charitable initiatives. Feel free to reach out to us for inquiries, collaborations, or to learn more about our upcoming events.</p>
+                    <div>
+                        <a href="/index"><span class="bouncy">Be</span> <span class="bouncy">The</span> <span class="bouncy">Difference!</span></a>
+                    </div>
+                </div>
+                <div class="page_footer_quick_links">
+                    <ul>
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/aboutUs">About us</a></li>
+                        <li><a href="/events">Events</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/donate">Donate</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                    <div class="page_footer_lastWords">
+                        <p>Charity donations of $2 or more to the Blue Hope Volunteer Organization may be tax deductible in Australia</p>
+                        <p>Website managed by: Group UG 78</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="page_footer_copyright">
+            <p>&copy; 2024 Blue Hope Volunteer Organization. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

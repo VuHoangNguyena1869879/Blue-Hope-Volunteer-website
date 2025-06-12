@@ -1,0 +1,509 @@
+/** Main content body of the webpage **/
+/* Main content( Slogan+Introduction about volunteering in Australia) */
+.intro_section img {
+    width: 50rem;
+    height: 25rem;
+}
+
+#slogan_heading {
+    padding-top: 5rem;
+    font-family: 'Chewy', sans-serif;
+    font-size: 2.5rem;
+    background-image: linear-gradient(122deg, #00BFFF 25%, #32CD32 50%, #FFD700 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* About us section */
+#about_us_section {
+    padding: 50px 20px;
+    background-color: #f5f5dc;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-container {
+    padding: 20px;
+}
+
+.second_content_heading {
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.content_heading{
+    color: #004aad;
+    letter-spacing: 2px;
+}
+.intro {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.mission-vision-values {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.mission-vision-values h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.mission-vision-values p,
+.mission-vision-values ul {
+    font-size: 1.1em;
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.values {
+    background: linear-gradient(135deg, #d5d5c5 0%, #b5b5a5 100%);
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    text-align: center;
+    position: relative;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.values::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #20b2aa, #5f9ea0);
+    z-index: -1;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.values:hover::before {
+    opacity: 1;
+}
+
+.values:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.values:hover h3, .values:hover li {
+    color: white;
+}
+
+.achievements {
+    background-color: #ffffff;
+    border: 3px solid #004aad;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 30px 0;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievements:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.achievements h3 {
+    color: #004aad;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.achievements p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.achievements ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievements li {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievements li i {
+    color: #004aad;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .mission-vision-values {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mission-vision-values > div {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
+
+.intro_content {
+    background-image: url(/images/bluehope.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin-top: -2rem;
+    height: 55rem;
+    transition: 1s ease-in-out background-size;
+}
+
+.intro_content:hover {
+    background-size: 120%;
+}
+
+#intro_image_def {
+    font-family: 'Merriweather', serif;
+}
+
+#intro_content_intro {
+    font-size: 1.563rem;
+    font-family: 'Merriweather', serif;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+}
+
+
+#intro_content_intro strong {
+    font-size: 1.563rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 16px 22px 11px rgba(252, 252, 252, 0.5);
+    transition: 1s ease-in-out background-image, 1s ease-in-out text-shadow, 400ms ease-in-out font-size;
+
+}
+
+#intro_content_intro strong:hover {
+    background-image: linear-gradient(58deg, #FBDA61 0%, #FF5ACD 100%);
+    text-shadow: 16px 22px 11px rgba(192, 222, 42, 0.46);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+.intro_content_paragraph {
+    padding-top: 6rem;
+    text-align: center;
+}
+
+.intro_content_image img {
+    border-radius: .5rem;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
+    height: 19rem;
+    width: 25rem;
+}
+
+.join_btn {
+    border: 0.125rem solid white;
+    border-radius: 1.25rem;
+    font-size: 1.563rem;
+    font-weight: bold;
+    background-color: #004aad;
+    color: white;
+    width: 20rem;
+    height: 4rem;
+    font-family: 'Fredoka One', sans-serif;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.join_btn:hover {
+    background-color: grey;
+    border-color: grey;
+}
+
+
+/* Second content -  */
+#latestEvent_section {
+    padding: 50px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin:10px 0;
+}
+
+.second_content_heading {
+    text-align: center;
+    font-size: 36px;
+    color: #004aad;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.second_content_heading::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #004aad;
+    margin: 10px auto 0;
+}
+
+.latest_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    position: relative;
+}
+
+.event_card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+.event_card a{
+    text-decoration: none;
+}
+.event_card:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.event_card:nth-child(2) {
+    grid-column: 3 / 5;
+    grid-row: 1;
+}
+
+.event_card:nth-child(3) {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.event_card:nth-child(4) {
+    grid-column: 3 / 5;
+    grid-row: 2;
+}
+
+.event_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #004aad;
+}
+
+.event_image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.event_card:hover .event_image {
+    transform: scale(1.1);
+}
+
+.event_text {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.event_card:hover .event_text {
+    background-color: rgba(0, 74, 173, 0.8);
+    color: white;
+}
+.event_card:hover .content_heading {
+    color: white;
+}
+.event_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #004aad;
+}
+
+/* Latest news section */
+#latestNews_section {
+    padding: 50px;
+    background: linear-gradient(135deg, #e7f3ff 0%, #d1e7ff 100%);
+    border-radius: 10px;
+    margin:10px 0;
+}
+
+.latest_content_news {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news_card {
+    background-color: #ebebeb;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: rotate(0deg);
+    height:550px;
+}
+
+.news_card:hover {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.news_card img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.news_card:hover .news_card img {
+    transform: scale(1.2);
+}
+
+.news_card a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+.news_text {
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 20%;
+}
+
+.news_card .read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #004aad;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.news_card .read-more-btn:hover {
+    background-color: #ff4757;
+    transform: scale(1.1);
+}
+
+/* Volunteer highlights */
+#volunteer_section {
+    background-color: #f5f5dc;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.second_content_heading {
+    font-size: 2.5em;
+    color: #004aad;
+    margin-bottom: 30px;
+}
+
+.volunteer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.volunteer-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    height: 800px;
+}
+
+.volunteer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.volunteer-card_image img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.volunteer-card_text {
+    padding: 20px;
+    text-align: left;
+    height:300px;
+}
+
+.volunteer-card_text h3 {
+    color: #004aad;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+.volunteer-card_text p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.read-more-btn {
+    background-color: #004aad;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #003080;
+}

@@ -1,0 +1,494 @@
+/** Header of the webpage **/
+#page_header {
+    background: white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    padding: 0.625rem 1.25rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.page_header_top {
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 0.313rem 0.313rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_side,
+.right_side {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.left_side {
+    justify-content: flex-start;
+}
+
+.right_side {
+    justify-content: flex-end;
+}
+
+/* Header logo */
+.header_image img {
+    width: 8.125rem;
+    height: 9.375rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
+}
+
+/* Navigation bar */
+.navigation_bar_wrapper {
+    display: flex;
+    justify-content: center;
+    border-top: 0.063rem solid #e7e7e7;
+    padding: 0.938rem 0;
+}
+
+.navigation_bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation_bar ul li {
+    margin: 0 2.5rem;
+}
+
+.navigation_bar ul li a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #004aad;
+    margin: 0 -0.25rem;
+    padding: 0 0.25rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+    font-family: 'Roboto', serif;
+    transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    font-size: 1.5625rem;
+}
+
+.navigation_bar ul li a:hover {
+    box-shadow: inset 8.3rem 0 0 0 #54b3d6;
+    color: goldenrod;
+}
+
+.navigation_bar ul li.active a {
+    color: darkgray;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navigation_bar ul li.active a .fa-calendar-alt {
+    color: darkgray;
+}
+
+/* City selection */
+#page_header_citySelection {
+    position: relative;
+    display: inline-block;
+    background-color: #f8f9fa;
+    border: 0.063rem solid #ced4da;
+    border-radius: 1.25rem;
+    width: 13.75rem;
+    height: 2.813rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+#page_header_citySelection::before {
+    content: "\f041";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: black;
+    position: absolute;
+    left: 12rem;
+    top: 0.6rem;
+}
+
+#city_selector {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    line-height: 1;
+    display: inline-block;
+}
+
+#city_selector_text {
+    color: black;
+    font-weight: bold;
+    margin-left: 0.625rem;
+}
+
+/* Ensure the dropdown list is hidden by default */
+/* Dropdown list */
+.citydropdown_container {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.citydropdown_list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.313rem;
+    margin-top: 0.313rem;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+/* Dropdown list items */
+.citydropdown_list ul {
+    list-style-type: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.citydropdown_list ul li {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.citydropdown_list ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.citydropdown_list ul li:hover {
+    background-color: #e0f7fa;
+    color: #004aad;
+    transform: scale(1.05);
+}
+
+/* Show dropdown on click */
+#page_header_citySelection:focus-within .citydropdown_list {
+    display: block;
+}
+
+.search_container {
+    display: flex;
+    align-items: center;
+}
+
+#search_form {
+    display: flex;
+    align-items: center;
+    width: 25rem;
+}
+
+#search_input {
+    border: 0.063rem solid #ccc;
+    border-radius: 0.25rem 0 0 0.25rem;
+    padding: 0.625rem 0.938rem;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+#search_button {
+    border: 0.063rem solid #007bff;
+    border-left: none;
+    background-color: #007bff;
+    color: white;
+    padding: 0.625rem 0.938rem;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+#search_button:hover {
+    background-color: #0056b3;
+}
+
+/****** Sign up + login button & username text box ******/
+
+#login_btn,
+#signup_btn {
+    width: 5.625rem;
+    height: 2.813rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 0.063rem solid #ced4da;
+    border-radius: 1.25rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 0.25rem 0.938rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-image 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+#signup_btn:hover,
+#login_btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.375rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+#signup_btn:active,
+#login_btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0.25rem 0.938rem rgba(0, 0, 0, 0.1);
+}
+
+/* Username drop down */
+
+.page_header_username {
+    display: flex;
+    height: 45px;
+    font-weight: bold;
+    width: 220px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #f8f9fa;
+    gap: 5px;
+    border: 0.063rem solid #ced4da;
+    border-radius: 20px;
+}
+
+.fa-solid.fa-user {
+    color: black;
+    font-size: 23px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+#username_box {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    line-height: 1;
+    display: inline-block;
+}
+
+#username_text {
+    color: black;
+}
+
+.dropdown_container {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown_list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 20px;
+    right: 0;
+}
+
+#dropdown_list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dropdown_list ul li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown_list ul li a:hover {
+    background-color: #ddd;
+}
+
+
+#page_header_user:hover #dropdown_list,
+.dropdown_container:hover #dropdown_list {
+    display: block;
+}
+
+
+/*************** Footer of the page **/
+.page_footer {
+    text-align: center;
+    background-color: #004aad;
+    color: white;
+    padding: 1.25rem 0;
+}
+
+.page_footer_main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    height: auto;
+}
+
+.page_footer_logo {
+    width: 40%;
+}
+
+.page_footer_text {
+    width: 50%;
+    margin-right: 1.25rem;
+}
+
+.page_footer_logo img {
+    margin-top: 0.625rem;
+    width: 9.375rem;
+    height: 12.5rem;
+}
+
+.page_footer_quick_links ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.page_footer_quick_links ul li {
+    display: inline;
+    margin-right: 0.2rem;
+    margin-left: 0.5rem;
+}
+
+.page_footer_contact_info h3 {
+    font-size: 1.5625rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 1.25rem 0 0.625rem 1.25rem;
+}
+
+.page_footer_contact_info p {
+    font-size: 1.25rem;
+    font-family: 'Nunito', sans-serif;
+    margin: 0.313rem 0;
+}
+
+.page_footer_contact_info strong {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page_footer_thankMessage p {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0.625rem 0;
+}
+
+.page_footer_thankMessage div {
+    margin: 0 auto;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: black;
+    background-color: aquamarine;
+    box-sizing: border-box;
+    width: 16rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.page_footer_thankMessage div a:link {
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.page_footer_thankMessage div a:visited {
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.page_footer_thankMessage div a:hover {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+.bouncy {
+    animation: bouncy 7s infinite linear;
+    position: relative;
+}
+
+.page_footer_thankMessage div .bouncy:nth-of-type(2) {
+    animation-delay: 0.06s;
+}
+
+.page_footer_thankMessage div .bouncy:nth-of-type(3) {
+    animation-delay: 0.12s;
+}
+
+.page_footer_thankMessage div .bouncy:nth-of-type(4) {
+    animation-delay: 0.24s;
+}
+
+.page_footer_quick_links a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -0.25rem;
+    padding: 0 0.25rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    font-family: 'Roboto', serif;
+    text-decoration: underline;
+}
+
+.page_footer_quick_links a:hover {
+    box-shadow: inset 8.3rem 0 0 0 #54b3d6;
+    color: goldenrod;
+}
+
+.page_footer_lastWords p {
+    font-size: 0.9375rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.625rem 0;
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0rem;
+    }
+
+    40% {
+        top: 0rem;
+    }
+
+    43% {
+        top: -1rem;
+    }
+
+    46% {
+        top: 0rem;
+    }
+
+    48% {
+        top: -0.4rem;
+    }
+
+    50% {
+        top: 0rem;
+    }
+
+    100% {
+        top: 0rem;
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/navBar+footer.css">
+    <title>Volunteer Sign Up</title>
+    <link rel="stylesheet" href="stylesheets/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="page_header">
+        <div class="page_header_top">
+            <div class="header_image">
+                <a href="/index"><img src="images/Blue Hope.png" alt="Blue Hope organization logo"></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="signup_section">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <form action="/signup" method="post" id="signup_form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="text" id="phonenumber" name="phonenumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                        <select id="city" name="city" required>
+                            <option value="" disabled selected>Select your city</option>
+                            <option value="Adelaide">Adelaide</option>
+                            <option value="Melbourne">Melbourne</option>
+                            <option value="Sydney">Sydney</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                </div>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required>
+                    <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+                </div>
+                <div class="password-container">
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"
+                        required>
+                    <div id="passwordFeedback"></div>
+                </div>
+                <button type="submit" id="submitButton">Sign Up</button>
+                <div id="login_div">
+                    <p>Already a member?</p>
+                    <a href="#" onclick="window.location.href='/login'">Log in</a>
+                </div>
+                <p id="response"></p>
+            </form>
+        </div>
+    </section>
+    <footer class="page_footer">
+        <div class="page_footer_main">
+            <div class="page_footer_logo">
+                <a href="/index"><img src="images/Blue Hope.png" alt="Blue Hope Logo"></a>
+                <div class="page_footer_contact_info">
+                    <h3>Contact Us</h3>
+                    <p>Email: bluehopeofficial@gmail.com</p>
+                    <p>Phone: +61 46677 1508</p>
+                    <p>Address: 69 North Terrace, Adelaide, SA 5000</p>
+                </div>
+            </div>
+            <div class="page_footer_text">
+                <div class="page_footer_thankMessage">
+                    <p>Thank you for visiting Blue Hope Volunteer Organization's website. We're dedicated to
+                        making a
+                        positive impact in our community through volunteer work and charitable initiatives.
+                        Feel free to reach out to us for inquiries, collaborations, or to learn more about
+                        our upcoming
+                        events.</p>
+                    <div>
+                        <a href="/index"><span class="bouncy">Be</span>
+                            <span class="bouncy">The</span>
+                            <span class="bouncy">Difference!</span></a>
+                    </div>
+                </div>
+                <div class="page_footer_quick_links">
+                    <ul>
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/aboutUs">About us</a></li>
+                        <li><a href="/events">Events</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/donate">Donate</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                    <div class="page_footer_lastWords">
+                        <p>Charity donations of $2 or more to the Blue Hope Volunteer Organization may be
+                            tax deductible in
+                            Australia</p>
+                        <p>Website managed by: Group UG 78</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="page_footer_copyright">
+            <p>&copy; 2024 Blue Hope Volunteer Organization. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="javascripts/signup.js"></script>
+</body>
+
+</html>

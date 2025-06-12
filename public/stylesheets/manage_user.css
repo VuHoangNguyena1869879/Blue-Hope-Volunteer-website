@@ -1,0 +1,185 @@
+
+#manage_user_section {
+    background-image: linear-gradient(to left, #8EC5FC 0%, #e0ffff 99%);
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    border-left-style:solid;
+    border-left-width:1px;
+    width:80%;
+    height:30rem;
+}
+
+#user_search_button {
+    border-color:whitesmoke;
+    box-sizing:border-box;
+    box-shadow: .094rem .094rem 0 lightslategray;
+    margin-left:-.1rem;
+    border-style:groove;
+    border-radius:0.094rem;
+    width:1.78rem;
+    height: 1.65rem;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+#user_search_button:hover {
+    box-shadow: 0 0 .125rem white;
+    border-color:black;
+}
+
+hr {
+    margin:0;
+    border-color: black;
+    border-width: 2px;
+}
+
+#manage_info_header {
+    padding:.5rem;
+    width:100%;
+}
+
+#add_user {
+    margin-left:50%;
+    padding-top:1.8rem;
+}
+
+#info_section {
+    width:100%;
+    height:20rem;
+    gap:0;
+}
+
+#info_list {
+    list-style-type: none;
+    margin-left:-1rem;
+}
+
+#info_list li {
+    width:88.5%;
+    display:flex;
+    box-sizing:border-box;
+    margin:0;
+    padding-top:1rem;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-repeat: no-repeat;
+    z-index:-1;
+    background-position:center left;
+    background-size:0;
+    transition: 450ms ease-in-out;
+}
+
+
+#info_list li:hover {
+    background-size:54rem;
+}
+
+
+#info_list li::before {
+    content: '';
+    display:inline-block;
+    height:2rem;
+    width:2rem;
+    background-image: url(/images/avatar4.png);
+    background-size:cover;
+    position: relative;
+    top:-.5rem;
+    left:.7rem;
+}
+
+
+#user_info_header div h1 {
+    margin-left:2rem;
+}
+
+
+.edit img {
+    width:1.5rem;
+    height:1.5rem;
+    padding-left:.3rem;
+    padding-top:.1rem;
+    box-shadow:inset 0 0 0 white;
+    transition:width 0.4s ease-in-out, height 0.4s ease-in-out,
+        box-shadow 0.6s ease-in-out;
+}
+
+.edit img:hover {
+    width:2rem;
+    height:2rem;
+    box-shadow:inset 0 0 2rem #8EC5FC;
+}
+
+#search_user {
+    margin-left:1%;
+    margin-top:1.5rem;
+
+}
+
+#user_search_input:hover {
+    box-shadow: 0 0 .125rem white;
+    border-color:black;
+}
+
+#user_search_input {
+    height: 1.8rem;
+    border: .125rem groove;
+    border-radius: .4rem;
+    border-color:whitesmoke;
+    box-sizing:border-box;
+    box-shadow: .094rem .094rem 0 lightslategray;
+    font-size:1rem;
+}
+
+
+.name {
+    text-align: center;
+    border-style: hidden;
+    border-radius: .25rem;;
+    font-size:.9rem;
+    height:1.2rem;
+    width:20%;
+    box-sizing: border-box;
+    margin-left:1rem;
+    font-weight:600;
+}
+
+.manager {
+    background-color:lightgoldenrodyellow;
+}
+
+.admin {
+    background-color:lightsalmon;
+}
+
+.volunteer {
+    background-color: aquamarine;
+}
+
+.mail {
+    margin-left:5%;
+    font-size:1rem;
+    height:1rem;
+    width:30%;
+    text-align: center;
+    /* border-style:solid;
+    border-width:1px; */
+}
+
+.mail a {
+    overflow: hidden;
+}
+
+.phone {
+    margin-left:5%;
+    font-size:1rem;
+    height:1rem;
+    width:20%;
+}
+
+.id {
+    margin-left:0%;
+    font-size:1rem;
+    height:1rem;
+    width:10%;
+}

@@ -1,0 +1,106 @@
+#main_input_section {
+    padding: 5rem;
+    gap: 2rem;
+}
+
+#event_content {
+    flex-direction: column;
+    width: 60%;
+    padding: 1rem;
+    max-width: 50rem;
+}
+
+#aside_info {
+    position: sticky;
+    top: 16em;
+    width: 40%;
+    height: fit-content;
+}
+
+#event_content textarea {
+    width: 100%;
+    height: 5rem;
+}
+
+#submit_button {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    font-size: large;
+    font-weight: bold;
+}
+
+#additional_event_info p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: fit-content;
+    left: 5rem;
+    width: 5.5rem;
+    vertical-align: middle;
+
+}
+
+#gap {
+    margin: auto;
+    text-align: center;
+}
+
+
+#input_start_time {
+    margin-right: 1em;
+}
+
+#input_end_time {
+    margin-left: 1em;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+}
+
+.full-grow {
+    flex-grow: 1;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.aside-input-field {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 1.5rem;
+    left: 5rem;
+}
+
+.block {
+    display: block;
+}
+
+.vmargin {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    color: #333;
+}
+
+.margin-bottom {
+    margin-bottom: 2rem;
+}

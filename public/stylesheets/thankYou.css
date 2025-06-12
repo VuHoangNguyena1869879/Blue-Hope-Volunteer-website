@@ -1,0 +1,30 @@
+#section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.heading {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    color: #004aad;
+    margin-bottom: 30px;
+}
+
+.message {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}

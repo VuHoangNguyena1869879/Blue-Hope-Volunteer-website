@@ -1,0 +1,56 @@
+#news_content {
+    margin: 2em;
+}
+#news_content h2 {
+    font-size: larger;
+}
+
+#news_content textarea {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 75%;
+    margin-bottom: 2em;
+}
+
+#news_content select {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 10%;
+    height: 2em;
+    margin-bottom: 2em;
+}
+
+#news_content input {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#news_content input[type="submit"] {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 10em;
+    font-size: large;
+    font-weight: bold;
+}
+
+#input_body {
+    height: 25em;
+}
+
+#input_title {
+    height: 3em;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    /* Soft light grey background */
+    color: #333;
+}
+

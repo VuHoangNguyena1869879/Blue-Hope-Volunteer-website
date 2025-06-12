@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blue Hope Volunteer Organization</title>
+        <!-- <link rel="stylesheet" href="stylesheets/user_mainpage.css"> -->
+        <link rel="stylesheet" href="stylesheets/index.css">
+        <link rel="stylesheet" href="stylesheets/navBar+footer.css">
+        <link rel="stylesheet" href="stylesheets/subscribe.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair Display">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather">
+        <script src="https://kit.fontawesome.com/b9f3af96f1.js" crossorigin="anonymous"></script>
+        <script src="javascripts/mainpage_access.js"></script>
+        <script src="javascripts/checkUserLoggedIn.js"></script>
+        <script src="javascripts/subscribe.js"></script>
+        <script src="javascripts/changeLinkColor.js"></script>
+        <script src="javascripts/branch.js"></script>
+    </head>
+
+    <body onload="process_content(); getBranches(); checkLoginStatus()">
+        <header id="page_header">
+            <div class="page_header_top">
+                <div class="left_side">
+                    <div class="search_container">
+                        <form id="search_form" action="/searchResults" method="GET">
+                            <input type="text" id="search_input" name="query" placeholder="Search...">
+                            <button type="submit" id="search_button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="header_image">
+                    <a href="/index"><img src="images/bluehope(1).png" alt="Blue Hope organization logo"></a>
+                </div>
+                <div class="right_side">
+                    <div id='page_header_citySelection'>
+                        <div class="city_selector">
+                            <p id="city_selector_text">Adelaide</p>
+                        </div>
+                        <div class="citydropdown_container">
+                            <div id="citydropdown_list" class="citydropdown_list">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page_header_user"></div>
+                </div>
+            </div>
+            <div class="navigation_bar_wrapper">
+                <nav class="navigation_bar">
+                    <ul>
+                        <li><a href="/index"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="/aboutUs"><i class="fas fa-info-circle"></i> About us</a></li>
+                        <li><a href="/events"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                        <li><a href="/news"><i class="fas fa-newspaper"></i> News</a></li>
+                        <li><a href="/donate"><i class="fas fa-donate"></i> Donate</a></li>
+                        <li><a href="/contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main_content">
+            <div class="page_content">
+                <section class="intro_section">
+                    <div class="intro_content" id="imageDiv">
+                        <div class="slogan">
+                            <h1 id="slogan_heading">In Blue Hope volunteer organization, we bring people together to
+                                reach out and support those in need</h1>
+                        </div>
+                        <div class="intro_content_paragraph border-box">
+                            <p id="intro_content_intro">Volunteering in Australia is a <strong>cherished
+                                    tradition</strong>,
+                                From community outreach to environmental conservation and beyond, volunteers play a
+                                vital role
+                                in building <strong>more connected communities</strong>.
+                            </p>
+                            <button type="button" class="join_btn" id="join_btn">Join us
+                                today</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="about_us_section">
+                    <div class="about-container">
+                        <h2 class="second_content_heading">About Us</h2>
+                        <p class="intro">
+                            Welcome to the Blue Hope Volunteer Organization. Since our inception in 2010, we have been
+                            committed to bringing positive change to communities through dedicated volunteer work. Our
+                            mission is to empower individuals to give back, fostering a culture of compassion,
+                            integrity,
+                            and support.
+                        </p>
+                        <div class="mission-vision-values">
+                            <div class="values">
+                                <h3>Our Mission</h3>
+                                <p>To empower individuals to give back to their communities, fostering a culture of
+                                    compassion and support.</p>
+                            </div>
+                            <div class="values">
+                                <h3>Our Vision</h3>
+                                <p>To create a world where every individual is actively engaged in improving their
+                                    community
+                                    and the lives of those around them.</p>
+                            </div>
+                            <div class="values">
+                                <h3>Our Values</h3>
+                                <ul>
+                                    <li>Compassion</li>
+                                    <li>Integrity</li>
+                                    <li>Inclusivity</li>
+                                    <li>Commitment</li>
+                                    <li>Empowerment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <h3>Our Achievements</h3>
+                            <p>Over the years, Blue Hope has:</p>
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i> Organized over 500 community events</li>
+                                <li><i class="fas fa-users"></i> Engaged more than 10,000 volunteers</li>
+                                <li><i class="fas fa-dollar-sign"></i> Raised over $2 million for local charities</li>
+                                <li><i class="fas fa-hands-helping"></i> Provided support to over 50,000 individuals in need</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="latestEvent_section">
+                    <h2 class="second_content_heading">Latest Events</h2>
+                    <div class="latest_content">
+                        <div id="first_event_card" class="event_card">
+                            <a href="eventPage.html?idx=1">
+                                <img src="images/garageSale1.jpg" alt="volunteer_image" class="event_image">
+                            </a>
+                            <a href="eventPage.html?idx=1">
+                                <div class="event_text" id="first_event_text"></div>
+                            </a>
+                        </div>
+                        <div id="second_event_card" class="event_card">
+                            <a href="eventPage.html?idx=2">
+                                <div class="event_text" id="second_event_text"></div>
+                            </a>
+                            <a href="eventPage.html?idx=2">
+                                <img src="images/santa1.jpg" alt="santa_image" class="event_image">
+                            </a>
+                        </div>
+                        <div id="third_event_card" class="event_card">
+                            <a href="eventPage.html?idx=3">
+                                <img src="images/garageSale1.jpg" alt="volunteer_image" class="event_image">
+                            </a>
+                            <a href="eventPage.html?idx=3">
+                                <div class="event_text" id="third_event_text"></div>
+                            </a>
+                        </div>
+                        <div id="fourth_event_card" class="event_card">
+                            <a href="eventPage.html?idx=3">
+                                <img src="images/garageSale1.jpg" alt="volunteer_image" class="event_image">
+                            </a>
+                            <a href="eventPage.html?idx=3">
+                                <div class="event_text" id="fourth_event_text"></div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="latestNews_section">
+                    <h2 class="second_content_heading">News Flash</h2>
+                    <div class="latest_content_news">
+                        <div id="first_news_card" class="news_card">
+                            <a href="newsPage.html?idx=1">
+                                <img src="images/garageSale1.jpg" alt="volunteer_image" class="news_image">
+                            </a>
+                            <a href="newsPage.html?idx=1">
+                                <div class="news_text" id="first_news_text"></div>
+                            </a>
+                        </div>
+                        <div id="second_news_card" class="news_card">
+                            <a href="newsPage.html?idx=2">
+                                <div class="news_text" id="second_news_text"></div>
+                            </a>
+                            <a href="newsPage.html?idx=2">
+                                <img src="images/santa1.jpg" alt="santa_image" class="news_image">
+                            </a>
+                        </div>
+                        <div id="third_news_card" class="news_card">
+                            <a href="newsPage.html?idx=3">
+                                <img src="images/garageSale1.jpg" alt="volunteer_image" class="news_image">
+                            </a>
+                            <a href="newsPage.html?idx=3">
+                                <div class="news_text" id="third_news_text"></div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="volunteer_section">
+                    <h2 class="second_content_heading">Volunteer Hall of Fame</h2>
+                    <div class="volunteer-container">
+                        <div class="volunteer-card">
+                            <div class="volunteer-card_image">
+                                <img src="images/volunteer_stories1.jpg" alt="Volunteer 1">
+                            </div>
+                            <div class="volunteer-card_text">
+                                <h3>Duy Anh Do - Marketing Leader</h3>
+                                <p>"As a member of Blue Hope Volunteer Organization for two years, I've had
+                                    transformative experiences.
+                                    I look forward to continuing this journey of service and growth."</p>
+                            </div>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                        <div class="volunteer-card">
+                            <div class="volunteer-card_image">
+                                <img src="images/volunteer_stories2.jpg" alt="Volunteer 2">
+                            </div>
+                            <div class="volunteer-card_text">
+                                <h3>Duy Anh Huynh Thai - President</h3>
+                                <p>"Joining Blue Hope Volunteer Organization has been a transformative journey.
+                                    I'm appreciative of the chance to contribute and eagerly anticipate our continued
+                                    pursuit of positive change."</p>
+                            </div>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                        <div class="volunteer-card">
+                            <div class="volunteer-card_image">
+                                <img src="images/volunteer_stories3.jpg" alt="Volunteer 2">
+                            </div>
+                            <div class="volunteer-card_text">
+                                <h3>Quoc Khanh Duong - Event Leader</h3>
+                                <p>"From assisting at local events to participating in fundraising campaigns, every
+                                    moment has been rewarding. I'm grateful for the opportunity to contribute to
+                                    such a meaningful cause."</p>
+                            </div>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                        <div class="volunteer-card">
+                            <div class="volunteer-card_image">
+                                <img src="images/volunteer_stories4.jpg" alt="Volunteer 1">
+                            </div>
+                            <div class="volunteer-card_text">
+                                <h3>Vu Hoang Nguyen - Vice President</h3>
+                                <p>"As a dedicated volunteer with Blue Hope for the past three years,
+                                    I have experienced incredible personal growth and fulfillment."</p>
+                            </div>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="join_section">
+                    <form action="/email" method="post" id="subscription_form">
+                        <div id="join_div">
+                            <div id="subscribe_heading_div">
+                                <h2 id="subscribe_heading">Stay up to date with our latest events by subscribing</h2>
+                            </div>
+                            <div id="subscription_info">
+                                <div id="first_name">
+                                    <label for="subscribe_first_name">First Name</label>
+                                    <input type="text" id="subscribe_first_name" name="first_name"
+                                        placeholder="Your First Name">
+                                </div>
+                                <div id="family_name">
+                                    <label for="subscribe_family_name">Family Name</label>
+                                    <input type="text" id="subscribe_family_name" name="family_name"
+                                        placeholder="Your Family Name">
+                                </div>
+                                <div id="email">
+                                    <label for="email_text">Email</label>
+                                    <input type="text" id="email_text" name="email" placeholder="Your email address">
+                                </div>
+                                <div id="city">
+                                    <label for="subscribe_city">City</label>
+                                    <input type="text" id="subscribe_city" name="city" placeholder="Your city">
+                                </div>
+                                <div id="subscribe_section_btn">
+                                    <button type="button" class="subscribe_btn">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="subscription_message"></div>
+                </section>
+
+                <footer class="page_footer">
+                    <div class="page_footer_main">
+                        <div class="page_footer_logo">
+                            <a href="/index"><img src="images/Blue Hope.png" alt="Blue Hope Logo"></a>
+                            <div class="page_footer_contact_info">
+                                <h3>Contact Us</h3>
+                                <p>Email: bluehopeofficial@gmail.com</p>
+                                <p>Phone: +61 46677 1508</p>
+                                <p>Address: 69 North Terrace, Adelaide, SA 5000</p>
+                            </div>
+                        </div>
+                        <div class="page_footer_text">
+                            <div class="page_footer_thankMessage">
+                                <p>Thank you for visiting Blue Hope Volunteer Organization's website. We're dedicated to
+                                    making a positive impact in our community through volunteer work and charitable
+                                    initiatives.
+                                    Feel free to reach out to us for inquiries, collaborations, or to learn more about
+                                    our upcoming events.</p>
+                                <div>
+                                    <a href="/index"><span class="bouncy">Be</span>
+                                        <span class="bouncy">The</span>
+                                        <span class="bouncy">Difference!</span></a>
+                                </div>
+                            </div>
+                            <div class="page_footer_quick_links">
+                                <ul>
+                                    <li><a href="/index">Home</a></li>
+                                    <li><a href="/aboutUs">About us</a></li>
+                                    <li><a href="/events">Events</a></li>
+                                    <li><a href="/news">News</a></li>
+                                    <li><a href="/donate">Donate</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                </ul>
+                                <div class="page_footer_lastWords">
+                                    <p>Charity donations of $2 or more to the Blue Hope Volunteer Organization may be
+                                        tax deductible in Australia</p>
+                                    <p>Website managed by: Group UG 78</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="page_footer_copyright">
+                        <p>&copy; 2024 Blue Hope Volunteer Organization. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const joinButton = document.getElementById('join_btn');
+                const username = getCookie("username");
+
+                if (username) {
+                    joinButton.onclick = function () {
+                        location.href = '/events';
+                    };
+                } else {
+                    joinButton.onclick = function () {
+                        location.href = '/login';
+                    };
+                }
+            });
+        </script>
+        <!-- <script src="javascripts/citySelector.js"></script> -->
+    </body>
+</html>

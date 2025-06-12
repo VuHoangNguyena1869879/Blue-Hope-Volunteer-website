@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Hope Login Page</title>
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="page_header">
+        <div class="page_header_top">
+            <div class="header_image">
+                <a href="/index"><img src="images/Blue Hope.png" alt="Blue Hope organization logo"></a>
+            </div>
+        </div>
+    </header>
+    <section id="login_section">
+        <div>
+            <div id="login_section_welcoming">
+                <p>Welcome to Blue Hope Organization. Please log in to be our volunteer member.
+                    If you don't have an account, please click on Create Account.</p>
+            </div>
+            <form action="/login" method="post" id="login_form">
+                <div id="login_box">
+                    <div>
+                        <div>
+                            <label for="username">Username:</label>
+                        </div>
+                        <div>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="password">Password:</label>
+                        </div>
+                        <div class="password-container">
+                            <input type="password" id="password" name="password" required>
+                            <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+                        </div>
+                    </div>
+                    <p id="response"></p>
+                    <button type="submit">Login</button>
+                </div>
+                <div class="social-login">
+                    <p>Or login with:</p>
+                    <a href="/auth/google"><button type="button" class="google-btn"><i class="fab fa-google"></i> Google</button></a>
+                    <a href="/auth/facebook"><button type="button" class="facebook-btn"><i class="fab fa-facebook-f"></i> Facebook</button></a>
+                </div>
+                <div class="additional-options">
+                    <p>New to Blue Hope Organization? <a href="/signup">Create an account</a></p>
+                </div>
+            </form>
+        </div>
+        <div id="login_image1">
+            <a href="/signup">
+                <img src="images/login_image1.png" alt="log in image 1">
+            </a>
+        </div>
+        <div id="login_image2">
+            <a href="/signup">
+                <img src="images/login_image2.png" alt="log in image 2">
+            </a>
+        </div>
+        <div class="page_footer_copyright">
+            <p>&copy; 2024 Blue Hope Volunteer Organization. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="javascripts/login.js"></script>
+</body>
+</html>

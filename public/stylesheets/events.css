@@ -1,0 +1,228 @@
+.main_content {
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.main_content_section {
+    transition: background-color 0.3s ease;
+}
+
+.main_content_section:hover {
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+.main_content_section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #004aad;
+    position: relative;
+    display: inline-block;
+}
+
+.main_content_section h1::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: #004aad;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.main_content_section h1:hover::after {
+    width: 100%;
+}
+
+.event_info_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.event_info_image img,
+.interesting_event_image img {
+    width: 300px;
+    /* Set a fixed width */
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensure the image covers the area */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event_info_image img:hover,
+.interesting_event_image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event_description,
+.interesting_event_description {
+    max-width: 600px;
+    text-align: justify;
+    transition: transform 0.3s ease;
+}
+
+.event_description:hover,
+.interesting_event_description:hover {
+    transform: translateY(-5px);
+}
+
+.event_description h1,
+.interesting_event_description h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #004aad;
+}
+
+.event_description p,
+.interesting_event_description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.event_description p:hover,
+.interesting_event_description p:hover {
+    color: #555;
+}
+
+#event_search_container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#event_search_form {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+#event_search_box {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+#event_search_button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #004aad;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#event_search_button:hover {
+    background-color: #003480;
+}
+
+.interesting_event {
+    margin-bottom: 40px;
+}
+
+.interesting_event_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagination_buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.page_button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #004aad;
+    color: #fff;
+    font-size: 1em;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page_button:hover {
+    background-color: #003480;
+}
+
+.add_event_button {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.add_event_btn {
+    padding: 15px 30px;
+    border: none;
+    background-color: #004aad;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add_event_btn:hover {
+    background-color: #003480;
+}
+
+/* Latest Event Styling */
+.latest_event {
+    background: #e3f2fd;
+    /* Light blue background for latest event */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.latest_event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.latest_event h1 {
+    font-size: 2em;
+    color: #004aad;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.latest_event .event_info_image img {
+    width: 60%;
+    height: 70%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.latest_event .event_description a {
+    color: #004aad;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.latest_event .event_description a:hover {
+    color: #003480;
+}
