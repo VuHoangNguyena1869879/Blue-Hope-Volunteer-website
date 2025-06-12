@@ -51,6 +51,7 @@ Open your browser and go to: http://localhost:8080
 ├── views/                # EJS templates
 ├── .env                  # Environment variables (excluded via .gitignore)
 └── package.json          # Project metadata and dependencies
+```
 
 ## Project Context
 This project was created for 24S1 Web Development and Cloud (WDC) as part of the third-year Computer Science curriculum at The University of Adelaide. It demonstrates key concepts including:
