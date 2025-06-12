@@ -33,10 +33,10 @@
 2. **Install Dependencies**
 npm install
 3. **Create a .env File**
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-FACEBOOK_CLIENT_ID=your_facebook_client_id
-FACEBOOK_CLIENT_SECRET=your_facebook_client_secret
+- GOOGLE_CLIENT_ID=your_google_client_id
+- GOOGLE_CLIENT_SECRET=your_google_client_secret
+- FACEBOOK_CLIENT_ID=your_facebook_client_id
+- FACEBOOK_CLIENT_SECRET=your_facebook_client_secret
 4. **Run the App**
 npm start
 Open your browser and go to: http://localhost:8080
