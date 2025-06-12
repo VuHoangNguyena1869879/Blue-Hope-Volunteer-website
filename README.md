@@ -4,9 +4,6 @@
 
 ![image](https://github.com/user-attachments/assets/dfb8e05f-ffce-4d1a-95a7-cf88baea7b77)
 
-
----
-
 ## Features
 
 - **OAuth Login with Google and Facebook**
@@ -17,8 +14,6 @@
 - Secure session management using Passport.js and Express-session
 - Responsive design with dynamic routing
 
----
-
 ## Tech Stack
 
 | Layer        | Technology                            |
@@ -28,8 +23,6 @@
 | Authentication | Passport.js (Google & Facebook OAuth) |
 | Database     | MySQL                                  |
 | Deployment   | Localhost (Dev), ready for cloud       |
-
----
 
 ## Setup Instructions
 
@@ -49,6 +42,8 @@ npm start
 Open your browser and go to: http://localhost:8080
 
 ## Folder Structure
+
+```bash
 ├── app.js                # Entry point with express, routes, auth
 ├── bin/                  # Server runner
 ├── routes/               # Route handlers (users, index)
