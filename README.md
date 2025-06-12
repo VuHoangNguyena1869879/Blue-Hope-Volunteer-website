@@ -71,6 +71,5 @@ This project is for academic and educational purposes only.
 ## Acknowledgements
 Thanks to: The University of Adelaide, Quoc Khanh Duong, Thai Duy Anh Huynh, Duc Anh Duy Do
 
-🔗 Demo & Contact
-Live Demo: Coming soon
-Contact: vuhoangnguyena1869879@students.adelaide.edu.au
+🔗 Contact
+- Contact: nguyenvuhoang24022004@gmail.com
